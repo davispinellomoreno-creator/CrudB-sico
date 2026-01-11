@@ -2,7 +2,8 @@ public class Usuario {
     private String nome;
     private String email;
     private Integer idade;
-
+    private long id;
+    private boolean ativo;
     public Usuario() {
     }
 
@@ -30,13 +31,30 @@ public class Usuario {
         this.idade = idade;
     }
 
-    public Usuario(String nome, String email, Integer idade) {
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
+    }
+
+    public Usuario(String nome, String email, Integer idade, long id, boolean ativo) {
         this.nome = nome;
         this.email = email;
         this.idade = idade;
-
-
-
+        this.id = id;
+        this.ativo = ativo;
+    }
 
     }
-}
+
+
