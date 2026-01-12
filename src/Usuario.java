@@ -1,7 +1,7 @@
 public class Usuario {
     private String nome;
     private String email;
-    private Integer idade;
+    private int idade;
     private long id;
     private boolean ativo;
     public Usuario() {
