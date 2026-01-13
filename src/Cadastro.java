@@ -1,4 +1,4 @@
-public class Cadastro extends RuntimeException {
+public class Cadastro  {
     private Usuario usuario;
     private Usuario nome;
     private Usuario email;
@@ -20,10 +20,18 @@ public class Cadastro extends RuntimeException {
     public void validarIdade(int idade){
         if(idade <= 0){
 
-            trhow new IllegalArgumentException("Idade inválida");
+            throw new IllegalArgumentException("Idade inválida");
+        }
+        if(idade < 18){
+            throw new IllegalArgumentException("Usuário deve ser maior de idade");
         }
     }
+
+    public void validarEmail(){
+
+    }
         }
+
 
 
 
