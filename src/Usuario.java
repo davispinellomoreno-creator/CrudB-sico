@@ -23,11 +23,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public Integer getIdade() {
+    public int getIdade() {
         return idade;
     }
 
-    public void setIdade(Integer idade) {
+    public void setIdade(int idade) {
         this.idade = idade;
     }
 
@@ -47,7 +47,7 @@ public class Usuario {
         this.ativo = ativo;
     }
 
-    public Usuario(String nome, String email, Integer idade, long id, boolean ativo) {
+    public Usuario(String nome, String email, int idade, long id, boolean ativo) {
         this.nome = nome;
         this.email = email;
         this.idade = idade;

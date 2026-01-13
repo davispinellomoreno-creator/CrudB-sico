@@ -1,5 +1,6 @@
-public class Cadastro {
-private Usuario nome;
+public class Cadastro extends RuntimeException {
+    private Usuario usuario;
+    private Usuario nome;
     private Usuario email;
     private Usuario idade;
 
@@ -14,7 +15,15 @@ private Usuario nome;
         }
 
 
-        }
 
     }
+    public void validarIdade(int idade){
+        if(idade <= 0){
+
+            trhow new IllegalArgumentException("Idade inválida");
+        }
+    }
+        }
+
+
 
