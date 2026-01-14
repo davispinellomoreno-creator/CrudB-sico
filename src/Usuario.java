@@ -55,6 +55,16 @@ public class Usuario {
         this.ativo = ativo;
     }
 
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                ", idade=" + idade +
+                ", id=" + id +
+                ", ativo=" + ativo +
+                '}';
     }
+}
 
 
